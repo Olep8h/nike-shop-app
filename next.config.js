@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
-  module.exports = {
-    experimental: {
-      forceSwcTransforms: true,
-    },
-    }
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: {
+    forceSwcTransforms: true
+  },
+  i18n: {
+    locales: ['en', 'ru'],
+    defaultLocale: 'en'
+  }
+};
 
+module.exports = nextConfig;
